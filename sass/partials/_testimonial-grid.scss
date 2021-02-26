@@ -1,0 +1,13 @@
+.testimonial-grid {
+  @media only screen and (min-width: $bp-large) {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-template-areas: 
+      'horizontal1 horizontal1 grey vertical'
+      'white horizontal2 horizontal2 vertical';
+    margin: 0 auto;
+    max-width: 80%;
+  }
+}

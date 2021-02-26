@@ -1,0 +1,44 @@
+// COLORS
+$color-violet-primary: #7541c8;
+$color-violet-primary-30: rgba(117, 65, 200, .3);
+$color-violet-primary-70: rgba(117, 65, 200, 0.7);
+$color-greyish-blue: #48556a;
+$color-greyish-blue-light: hsl(210, 46%, 95%);
+$color-blackish-blue: hsl(219, 29%, 14%);
+$color-white: #fff;
+$color-grey-light: #cfcfcf;
+
+// FONT-FAMILY
+  $font-primary: 'Barlow Semi Condensed', sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;   // 600px;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+
+  @media only screen and (max-width: $bp-largest) {
+      font-size: 50%;
+  }
+}
+
+body {
+  background: $color-grey-light;
+  font-family: $font-primary;
+}
+
+.main-container {
+  padding: 60px 20px;
+}
