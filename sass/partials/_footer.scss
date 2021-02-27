@@ -1,2 +1,12 @@
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+  font-size: 11px; 
+  padding: 20px;
+  text-align: center; 
+  width: 100%;
+
+  @media only screen and (min-width: $bp-large) {
+    bottom: 0;
+    position: fixed;
+  }
+}
 .attribution a { color: hsl(228, 45%, 44%); }
